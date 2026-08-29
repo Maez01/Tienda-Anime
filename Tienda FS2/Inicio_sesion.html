@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Inicio sesion</title>
+</head>
+<body>
+    <section class="form-register">
+        <h4>Iniciar sesión</h4>
+        <form id="formLogin" novalidate>
+            <input class="controls" type="email" name="correo" id="correo" placeholder="ingrese su correo">
+            <span class="error" id="error-correo"></span>
+
+            <input class="controls" type="password" name="contrasenia" id="contrasenia" placeholder="ingrese su contrasenia">
+            <span class="error" id="error-contrasenia"></span>
+
+            <span class="error" id="error-login"></span>
+
+            <button class="button" type="submit">Iniciar sesion</button>
+        </form>
+        <p><a href="Registro.html">No tengo cuenta</a></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

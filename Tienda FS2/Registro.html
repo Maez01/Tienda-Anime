@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Registro</title>
+</head>
+<body>
+    <form id="formRegistro" novalidate>    
+        <section class = "form-register">
+            <h4>Registro</h4>
+            <input class="controls" type = "text" name="nombres" id="nombres" placeholder="ingrese su nombre">  
+            <span class="error" id="error-nombres"></span>
+            
+            <input class="controls" type = "text" name="apellidos" id="apellidos" placeholder="ingrese su apellido">
+            <span class="error" id="error-apellidos"></span>
+
+            <input class="controls" type = "email" name="correo" id="correo" placeholder="ingrese su correo">  
+            <span class="error" id="error-correo"></span>
+
+            <input class="controls" type="password" name="contrasenia" id="contrasenia" placeholder="ingrese su contrasenia">
+            <span class="error" id="error-contrasenia"></span>
+
+            <button class="button" type="submit">Registrarse</button>
+            <p><a href="Inicio_sesion.html">Ya tengo cuenta</a></p>
+        </section>
+        
+        <script src="script.js"></script>
+    </form>
+    
+</body>
+</html>
