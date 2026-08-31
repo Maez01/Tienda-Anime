@@ -1,0 +1,97 @@
+/* =========================================================================
+   VARIABLES GLOBALES (Buenas prácticas para reutilizar estilos)
+   ========================================================================= */
+:root {
+    --borde-blanco: 
+        -3px -3px 0 #ffffff,
+         3px -3px 0 #ffffff,
+        -3px  3px 0 #ffffff,
+         3px  3px 0 #ffffff,
+        -3px  0px 0 #ffffff,
+         3px  0px 0 #ffffff,
+         0px -3px 0 #ffffff,
+         0px  3px 0 #ffffff;
+}
+
+/* =========================================================================
+   ESTILOS DE IMÁGENES
+   ========================================================================= */
+.imagenPequena {
+    width: 350px; /* Corregido: sin espacio entre el número y px */
+    height: 370px;
+    border-radius: 10px;
+}
+
+.imagenMediana {
+    width: 60%; 
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* =========================================================================
+   ESTILOS DE TEXTO (CARRUSEL / TEXTOS SOBRE IMÁGENES)
+   ========================================================================= */
+.tituloCategoria {
+    font-family: fantasy;
+    font-size: 45px;
+    font-weight: 500;
+    color: black;
+    text-shadow: var(--borde-blanco); /* Usando la variable de arriba */
+}
+
+.descripcionCategoria {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+    text-shadow: var(--borde-blanco);
+}
+
+/* =========================================================================
+ ESTILOS DE BOTON
+   ========================================================================= */
+.btnSearch{
+    background-color: white;
+    color: black;
+    border: black;
+    border-radius: 10px;
+}
+.btnSearch:hover{
+    background-color: #F2293A;
+    color: black;
+}
+
+.btnVerMas{
+    background-color: white;
+    color: black;
+    border: black;
+    border-radius: 10px;
+    position: relative;
+}
+.btnVerMas:hover{
+    background-color: #F2293A;
+    color: black;
+}
+
+/* =========================================================================
+ ESTILOS DE TEXTO EN PAGINA
+   ========================================================================= */
+.tituloCatCuerpo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: #F2293A;
+    text-shadow: var(--borde-blanco);
+}
+
+/* =========================================================================
+ CONTENEDOR PARA PRODUCTOS
+   ========================================================================= */
+.contenedorProductos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+}
