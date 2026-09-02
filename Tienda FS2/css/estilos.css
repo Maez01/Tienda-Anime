@@ -20,6 +20,7 @@
     width: 350px; /* Corregido: sin espacio entre el número y px */
     height: 370px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .imagenMediana {
@@ -29,7 +30,10 @@
     display: block;
     margin: 0 auto;
 }
-
+.imagen35x35{
+    width: 35px;
+    height: 35px;
+}
 /* =========================================================================
    ESTILOS DE TEXTO (CARRUSEL / TEXTOS SOBRE IMÁGENES)
    ========================================================================= */
@@ -74,7 +78,10 @@
     background-color: #F2293A;
     color: black;
 }
-
+.button a{
+    color: white;
+    text-decoration: none;
+}
 /* =========================================================================
  ESTILOS DE TEXTO EN PAGINA
    ========================================================================= */
@@ -95,3 +102,12 @@
     gap: 15px;
 
 }
+
+body {
+    background-image: url('Imagenes/logo+nombre cuadrado.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
