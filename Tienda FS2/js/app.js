@@ -207,279 +207,272 @@ if (formLogin) {
 const baseDatosMangas = [
     {
         id: 1,
-        titulo: "Manga 1",
-        genero: "shonen",
+        titulo: "BOCCHI THE ROCK",
+        genero: "SLICE OF LIFE",
         vistas: 10976,
         fechaAgregado: "2026-01-05",
         sinopsis: "Sinopsis pendiente para Manga 1. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+1",
+        imgPortada: "Imagenes/Mangas/BOCCHI-T1.jpg",
         volumenes: [
-            { tomo: 1, precio: 8990, stock: 8, img: "https://via.placeholder.com/200x280/333?text=Manga+1+Vol+1" },
-            { tomo: 2, precio: 10990, stock: 0, img: "https://via.placeholder.com/200x280/333?text=Manga+1+Vol+2" }
+            { tomo: 1, precio: 14990, stock: 8, img: "Imagenes/Mangas/BOCCHI-T1.jpg" },
+            { tomo: 2, precio: 14990, stock: 2, img: "Imagenes/Mangas/BR-T2.jpg" },
+            { tomo: 3, precio: 14990, stock: 3, img: "Imagenes/Mangas/BR-T3.jpg" },
+            { tomo: 4, precio: 14990, stock: 4, img: "Imagenes/Mangas/BR-T4.jpg" }
         ]
     },
     {
         id: 2,
-        titulo: "Manga 2",
-        genero: "seinen",
+        titulo: "AYANASHI",
+        genero: "SHONEN",
         vistas: 4157,
         fechaAgregado: "2026-01-22",
         sinopsis: "Sinopsis pendiente para Manga 2. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+2",
+        imgPortada: "Imagenes/Mangas/AY-T2.jpg",
         volumenes: [
-            { tomo: 1, precio: 8990, stock: 8, img: "https://via.placeholder.com/200x280/333?text=Manga+2+Vol+1" },
-            { tomo: 2, precio: 15990, stock: 0, img: "https://via.placeholder.com/200x280/333?text=Manga+2+Vol+2" },
-            { tomo: 3, precio: 15990, stock: 3, img: "https://via.placeholder.com/200x280/333?text=Manga+2+Vol+3" }
+            { tomo: 1, precio: 8990, stock: 8, img: "Imagenes/Mangas/AY-T2.jpg" },
+            { tomo: 2, precio: 8990, stock: 4, img: "Imagenes/Mangas/AYANASHI-T1.jpg" }
+            
         ]
     },
     {
         id: 3,
-        titulo: "Manga 3",
+        titulo: "BOLSA DE PAPEL KUN ESTA ENAMORADO",
         genero: "shojo",
         vistas: 1020,
         fechaAgregado: "2026-02-10",
         sinopsis: "Sinopsis pendiente para Manga 3. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+3",
+        imgPortada: "Imagenes/Mangas/BOLSA-T1.jpg",
         volumenes: [
-            { tomo: 1, precio: 8990, stock: 0, img: "https://via.placeholder.com/200x280/333?text=Manga+3+Vol+1" },
-            { tomo: 2, precio: 9990, stock: 5, img: "https://via.placeholder.com/200x280/333?text=Manga+3+Vol+2" }
+            { tomo: 1, precio: 9990, stock: 0, img: "Imagenes/Mangas/BOLSA-T1.jpg" },
+            { tomo: 2, precio: 9990, stock: 5, img: "Imagenes/Mangas/B-T2.jpg" }
         ]
     },
     {
         id: 4,
-        titulo: "Manga 4",
-        genero: "josei",
+        titulo: "CALL OF THE NIGHT",
+        genero: "SEINEN",
         vistas: 10363,
         fechaAgregado: "2026-02-28",
         sinopsis: "Sinopsis pendiente para Manga 4. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+4",
+        imgPortada: "Imagenes/Mangas/Call of the night T1.jpg",
         volumenes: [
-            { tomo: 1, precio: 15990, stock: 0, img: "https://via.placeholder.com/200x280/333?text=Manga+4+Vol+1" },
-            { tomo: 2, precio: 15990, stock: 3, img: "https://via.placeholder.com/200x280/333?text=Manga+4+Vol+2" }
+            { tomo: 1, precio: 15990, stock: 0, img: "Imagenes/Mangas/Call of the night T1.jpg" },
+            { tomo: 2, precio: 15990, stock: 3, img: "Imagenes/Mangas/C-T2.jpg" },
+            { tomo: 3, precio: 15990, stock: 3, img: "Imagenes/Mangas/C-T3.jpg" },
+            { tomo: 4, precio: 15990, stock: 3, img: "Imagenes/Mangas/C-T4.jpg" }
         ]
     },
     {
         id: 5,
-        titulo: "Manga 5",
-        genero: "isekai",
+        titulo: "CRIMSON GRIMOIRE",
+        genero: "FANTASIA",
         vistas: 4111,
         fechaAgregado: "2026-03-14",
         sinopsis: "Sinopsis pendiente para Manga 5. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+5",
+        imgPortada: "Imagenes/Mangas/CRIMSON T-1.jpg",
         volumenes: [
-            { tomo: 1, precio: 15990, stock: 2, img: "https://via.placeholder.com/200x280/333?text=Manga+5+Vol+1" },
-            { tomo: 2, precio: 8990, stock: 10, img: "https://via.placeholder.com/200x280/333?text=Manga+5+Vol+2" },
-            { tomo: 3, precio: 9990, stock: 8, img: "https://via.placeholder.com/200x280/333?text=Manga+5+Vol+3" },
-            { tomo: 4, precio: 12990, stock: 2, img: "https://via.placeholder.com/200x280/333?text=Manga+5+Vol+4" }
+            { tomo: 1, precio: 15990, stock: 2, img: "Imagenes/Mangas/CRIMSON T-1.jpg" },
+            { tomo: 2, precio: 8990, stock: 10, img: "Imagenes/Mangas/CR-T2.jpg" }
         ]
     },
     {
         id: 6,
-        titulo: "Manga 6",
-        genero: "kodomo",
+        titulo: "TSUMISTUKI",
+        genero: "TERROR",
         vistas: 5052,
         fechaAgregado: "2026-03-30",
         sinopsis: "Sinopsis pendiente para Manga 6. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+6",
+        imgPortada: "Imagenes/Mangas/DARK-T1.jpg",
         volumenes: [
-            { tomo: 1, precio: 9990, stock: 10, img: "https://via.placeholder.com/200x280/333?text=Manga+6+Vol+1" },
-            { tomo: 2, precio: 10990, stock: 0, img: "https://via.placeholder.com/200x280/333?text=Manga+6+Vol+2" },
-            { tomo: 3, precio: 8990, stock: 3, img: "https://via.placeholder.com/200x280/333?text=Manga+6+Vol+3" }
+            { tomo: 1, precio: 9990, stock: 3, img: "Imagenes/Mangas/DARK-T1.jpg" }
         ]
     },
     {
         id: 7,
-        titulo: "Manga 7",
-        genero: "shonen",
+        titulo: "DEADPOOL SAMURAI",
+        genero: "SHONEN",
         vistas: 2084,
         fechaAgregado: "2026-04-11",
         sinopsis: "Sinopsis pendiente para Manga 7. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+7",
+        imgPortada: "Imagenes/Mangas/DEADPOOL.jpg",
         volumenes: [
-            { tomo: 1, precio: 10990, stock: 5, img: "https://via.placeholder.com/200x280/333?text=Manga+7+Vol+1" },
-            { tomo: 2, precio: 10990, stock: 10, img: "https://via.placeholder.com/200x280/333?text=Manga+7+Vol+2" },
-            { tomo: 3, precio: 8990, stock: 8, img: "https://via.placeholder.com/200x280/333?text=Manga+7+Vol+3" }
+            { tomo: 1, precio: 14990, stock: 5, img: "Imagenes/Mangas/DEADPOOL.jpg" }
         ]
     },
     {
         id: 8,
-        titulo: "Manga 8",
-        genero: "seinen",
+        titulo: "DIMENSION W",
+        genero: "SEINEN",
         vistas: 8027,
         fechaAgregado: "2026-04-25",
         sinopsis: "Sinopsis pendiente para Manga 8. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+8",
+        imgPortada: "Imagenes/Mangas/Dimension W T-1.jpg",
         volumenes: [
-            { tomo: 1, precio: 12990, stock: 0, img: "https://via.placeholder.com/200x280/333?text=Manga+8+Vol+1" },
-            { tomo: 2, precio: 15990, stock: 2, img: "https://via.placeholder.com/200x280/333?text=Manga+8+Vol+2" }
+            { tomo: 1, precio: 15990, stock: 0, img: "Imagenes/Mangas/Dimension W T-1.jpg" },
+            { tomo: 2, precio: 15990, stock: 2, img: "Imagenes/Mangas/DW-T2.jpg" }
         ]
     },
     {
         id: 9,
-        titulo: "Manga 9",
-        genero: "shojo",
+        titulo: "EL TIEMPO CONTIGO",
+        genero: "FANTASIA",
         vistas: 10799,
         fechaAgregado: "2026-05-08",
         sinopsis: "Sinopsis pendiente para Manga 9. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+9",
+        imgPortada: "Imagenes/Mangas/EL TIEMPO -T1.jpg",
         volumenes: [
-            { tomo: 1, precio: 15990, stock: 0, img: "https://via.placeholder.com/200x280/333?text=Manga+9+Vol+1" },
-            { tomo: 2, precio: 8990, stock: 0, img: "https://via.placeholder.com/200x280/333?text=Manga+9+Vol+2" },
-            { tomo: 3, precio: 9990, stock: 10, img: "https://via.placeholder.com/200x280/333?text=Manga+9+Vol+3" }
+            { tomo: 1, precio: 15990, stock: 0, img: "Imagenes/Mangas/EL TIEMPO -T1.jpg" },
+            { tomo: 2, precio: 8990, stock: 0, img: "Imagenes/Mangas/ET-T2.jpg" },
+            { tomo: 3, precio: 9990, stock: 10, img: "Imagenes/Mangas/ET-T3.jpg" }
         ]
     },
     {
         id: 10,
-        titulo: "Manga 10",
-        genero: "josei",
+        titulo: "GANGSTA",
+        genero: "JOSEI",
         vistas: 5241,
         fechaAgregado: "2026-05-19",
         sinopsis: "Sinopsis pendiente para Manga 10. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+10",
+        imgPortada: "Imagenes/Mangas/GANGASTA -T1.jpg",
         volumenes: [
-            { tomo: 1, precio: 9990, stock: 10, img: "https://via.placeholder.com/200x280/333?text=Manga+10+Vol+1" },
-            { tomo: 2, precio: 8990, stock: 3, img: "https://via.placeholder.com/200x280/333?text=Manga+10+Vol+2" }
+            { tomo: 1, precio: 9990, stock: 10, img: "Imagenes/Mangas/GANGASTA -T1.jpg" },
+            { tomo: 2, precio: 8990, stock: 3, img: "Imagenes/Mangas/G-T2.jpg" }
         ]
     },
     {
         id: 11,
-        titulo: "Manga 11",
-        genero: "isekai",
+        titulo: "HEART GEAR",
+        genero: "FANTASIA",
         vistas: 5054,
         fechaAgregado: "2026-06-02",
         sinopsis: "Sinopsis pendiente para Manga 11. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+11",
+        imgPortada: "Imagenes/Mangas/HEART-T1.jpg",
         volumenes: [
-            { tomo: 1, precio: 10990, stock: 0, img: "https://via.placeholder.com/200x280/333?text=Manga+11+Vol+1" },
-            { tomo: 2, precio: 10990, stock: 2, img: "https://via.placeholder.com/200x280/333?text=Manga+11+Vol+2" },
-            { tomo: 3, precio: 9990, stock: 8, img: "https://via.placeholder.com/200x280/333?text=Manga+11+Vol+3" },
-            { tomo: 4, precio: 10990, stock: 8, img: "https://via.placeholder.com/200x280/333?text=Manga+11+Vol+4" }
+            { tomo: 1, precio: 10990, stock: 0, img: "Imagenes/Mangas/HEART-T1.jpg" },
+            { tomo: 2, precio: 10990, stock: 2, img: "Imagenes/Mangas/HEART-T2.jpg" }
         ]
     },
     {
         id: 12,
-        titulo: "Manga 12",
-        genero: "kodomo",
+        titulo: "JOSEE EL TIGRE Y LOS PECES",
+        genero: "SLICE OF LIFE",
         vistas: 11699,
         fechaAgregado: "2026-06-17",
         sinopsis: "Sinopsis pendiente para Manga 12. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+12",
+        imgPortada: "Imagenes/Mangas/JOSEE-T1.jpg",
         volumenes: [
-            { tomo: 1, precio: 15990, stock: 8, img: "https://via.placeholder.com/200x280/333?text=Manga+12+Vol+1" },
-            { tomo: 2, precio: 9990, stock: 5, img: "https://via.placeholder.com/200x280/333?text=Manga+12+Vol+2" }
+            { tomo: 1, precio: 15990, stock: 8, img: "Imagenes/Mangas/JOSEE-T1.jpg" },
+            { tomo: 2, precio: 9990, stock: 5, img: "Imagenes/Mangas/J-T2.jpg" }
         ]
     },
     {
         id: 13,
-        titulo: "Manga 13",
-        genero: "shonen",
+        titulo: "BOCCHI THE ROCK GAIDEN: KIKURI HIROI",
+        genero: "SLICE OF LIFE",
         vistas: 4510,
         fechaAgregado: "2026-07-01",
         sinopsis: "Sinopsis pendiente para Manga 13. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+13",
+        imgPortada: "Imagenes/Mangas/KIKURI T1.jpg",
         volumenes: [
-            { tomo: 1, precio: 12990, stock: 3, img: "https://via.placeholder.com/200x280/333?text=Manga+13+Vol+1" },
-            { tomo: 2, precio: 10990, stock: 8, img: "https://via.placeholder.com/200x280/333?text=Manga+13+Vol+2" },
-            { tomo: 3, precio: 15990, stock: 0, img: "https://via.placeholder.com/200x280/333?text=Manga+13+Vol+3" }
+            { tomo: 1, precio: 14990, stock: 3, img: "Imagenes/Mangas/KIKURI T1.jpg" }
         ]
     },
     {
         id: 14,
-        titulo: "Manga 14",
-        genero: "seinen",
+        titulo: "KOMI NO SE PUEDE COMUNICAR",
+        genero: "SLICE OF LIFE",
         vistas: 11716,
         fechaAgregado: "2026-07-14",
         sinopsis: "Sinopsis pendiente para Manga 14. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+14",
+        imgPortada: "Imagenes/Mangas/KOMI-T1.jpg",
         volumenes: [
-            { tomo: 1, precio: 8990, stock: 0, img: "https://via.placeholder.com/200x280/333?text=Manga+14+Vol+1" },
-            { tomo: 2, precio: 8990, stock: 10, img: "https://via.placeholder.com/200x280/333?text=Manga+14+Vol+2" },
-            { tomo: 3, precio: 10990, stock: 3, img: "https://via.placeholder.com/200x280/333?text=Manga+14+Vol+3" }
+            { tomo: 1, precio: 18990, stock: 0, img: "Imagenes/Mangas/KOMI-T1.jpg" },
+            { tomo: 2, precio: 18990, stock: 10, img: "Imagenes/Mangas/K-2.jpg" },
+            { tomo: 3, precio: 18990, stock: 3, img: "Imagenes/Mangas/K-3.jpg" }
         ]
     },
     {
         id: 15,
-        titulo: "Manga 15",
-        genero: "shojo",
+        titulo: "LA NOBLEZA DE LAS FLORES",
+        genero: "SHOJO",
         vistas: 4886,
         fechaAgregado: "2026-07-29",
         sinopsis: "Sinopsis pendiente para Manga 15. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+15",
+        imgPortada: "Imagenes/Mangas/LA NOBLEZA T1.jpg",
         volumenes: [
-            { tomo: 1, precio: 9990, stock: 5, img: "https://via.placeholder.com/200x280/333?text=Manga+15+Vol+1" },
-            { tomo: 2, precio: 10990, stock: 0, img: "https://via.placeholder.com/200x280/333?text=Manga+15+Vol+2" }
+            { tomo: 1, precio: 9990, stock: 5, img: "Imagenes/Mangas/LA NOBLEZA T1.jpg" },
+            { tomo: 2, precio: 10990, stock: 0, img: "Imagenes/Mangas/LN-T2.jpg" }
         ]
     },
     {
         id: 16,
-        titulo: "Manga 16",
-        genero: "josei",
+        titulo: "NIER AUTOMATA PEARL HARVOR DECENT",
+        genero: "FANTASAIA",
         vistas: 11238,
         fechaAgregado: "2026-08-03",
         sinopsis: "Sinopsis pendiente para Manga 16. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+16",
+        imgPortada: "Imagenes/Mangas/NIER-T1.jpg",
         volumenes: [
-            { tomo: 1, precio: 12990, stock: 8, img: "https://via.placeholder.com/200x280/333?text=Manga+16+Vol+1" },
-            { tomo: 2, precio: 12990, stock: 0, img: "https://via.placeholder.com/200x280/333?text=Manga+16+Vol+2" },
-            { tomo: 3, precio: 10990, stock: 0, img: "https://via.placeholder.com/200x280/333?text=Manga+16+Vol+3" },
-            { tomo: 4, precio: 9990, stock: 8, img: "https://via.placeholder.com/200x280/333?text=Manga+16+Vol+4" }
+            { tomo: 1, precio: 12990, stock: 8, img: "Imagenes/Mangas/NIER-T1.jpg" },
+            { tomo: 2, precio: 12990, stock: 0, img: "Imagenes/Mangas/N-T2.jpg" },
+            { tomo: 3, precio: 10990, stock: 0, img: "Imagenes/Mangas/N-T3.jpg" }
         ]
     },
     {
         id: 17,
-        titulo: "Manga 17",
+        titulo: "RE: ZERO",
         genero: "isekai",
         vistas: 9697,
         fechaAgregado: "2026-08-11",
         sinopsis: "Sinopsis pendiente para Manga 17. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+17",
+        imgPortada: "Imagenes/Mangas/RE ZERO -T1.jpg",
         volumenes: [
-            { tomo: 1, precio: 15990, stock: 3, img: "https://via.placeholder.com/200x280/333?text=Manga+17+Vol+1" },
-            { tomo: 2, precio: 15990, stock: 3, img: "https://via.placeholder.com/200x280/333?text=Manga+17+Vol+2" },
-            { tomo: 3, precio: 10990, stock: 0, img: "https://via.placeholder.com/200x280/333?text=Manga+17+Vol+3" }
+            { tomo: 1, precio: 14990, stock: 3, img: "Imagenes/Mangas/RE ZERO -T1.jpg" },
+            { tomo: 2, precio: 14990, stock: 3, img: "Imagenes/Mangas/RZ-T2.jpg" },
+            { tomo: 3, precio: 14990, stock: 0, img: "Imagenes/Mangas/RZ-T3.jpg" },
+            { tomo: 4, precio: 14990, stock: 2, img: "Imagenes/Mangas/RZ-T4.jpg" },
+            { tomo: 5, precio: 14990, stock: 1, img: "Imagenes/Mangas/RZ-T5.jpg" }
         ]
     },
     {
         id: 18,
-        titulo: "Manga 18",
-        genero: "kodomo",
+        titulo: "WATCH DOGS TOKYO",
+        genero: "SHONEN",
         vistas: 2766,
         fechaAgregado: "2026-08-18",
         sinopsis: "Sinopsis pendiente para Manga 18. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+18",
+        imgPortada: "Imagenes/Mangas/WATCH DOGS-T1.jpg",
         volumenes: [
-            { tomo: 1, precio: 8990, stock: 10, img: "https://via.placeholder.com/200x280/333?text=Manga+18+Vol+1" },
-            { tomo: 2, precio: 8990, stock: 10, img: "https://via.placeholder.com/200x280/333?text=Manga+18+Vol+2" },
-            { tomo: 3, precio: 8990, stock: 0, img: "https://via.placeholder.com/200x280/333?text=Manga+18+Vol+3" },
-            { tomo: 4, precio: 9990, stock: 10, img: "https://via.placeholder.com/200x280/333?text=Manga+18+Vol+4" }
+            { tomo: 1, precio: 16990, stock: 10, img: "Imagenes/Mangas/WATCH DOGS-T1.jpg" },
+            { tomo: 2, precio: 16990, stock: 10, img: "Imagenes/Mangas/WD-T2.jpg" },
+            { tomo: 3, precio: 16990, stock: 0, img: "Imagenes/Mangas/WD-T3.jpg" }
         ]
     },
     {
         id: 19,
-        titulo: "Manga 19",
-        genero: "shonen",
+        titulo: "YOUR NAME",
+        genero: "SLICE OF LIFE",
         vistas: 11649,
         fechaAgregado: "2026-08-24",
         sinopsis: "Sinopsis pendiente para Manga 19. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+19",
+        imgPortada: "Imagenes/Mangas/YOUR NAME -T1.jpg",
         volumenes: [
-            { tomo: 1, precio: 15990, stock: 0, img: "https://via.placeholder.com/200x280/333?text=Manga+19+Vol+1" },
-            { tomo: 2, precio: 12990, stock: 3, img: "https://via.placeholder.com/200x280/333?text=Manga+19+Vol+2" },
-            { tomo: 3, precio: 15990, stock: 3, img: "https://via.placeholder.com/200x280/333?text=Manga+19+Vol+3" },
-            { tomo: 4, precio: 15990, stock: 2, img: "https://via.placeholder.com/200x280/333?text=Manga+19+Vol+4" }
+            { tomo: 1, precio: 15990, stock: 0, img: "Imagenes/Mangas/YOUR NAME -T1.jpg" },
+            { tomo: 2, precio: 12990, stock: 3, img: "Imagenes/Mangas/YN -T2.jpg" },
+            { tomo: 3, precio: 15990, stock: 3, img: "Imagenes/Mangas/YN-T3.jpg" }
         ]
     },
     {
         id: 20,
-        titulo: "Manga 20",
+        titulo: "MISSION FAMILIA YOZAKURA",
         genero: "seinen",
         vistas: 9564,
         fechaAgregado: "2026-08-30",
         sinopsis: "Sinopsis pendiente para Manga 20. Reemplaza este texto con la descripción real de la serie.",
-        imgPortada: "https://via.placeholder.com/300x420/1f1f1f/ffffff?text=Manga+20",
+        imgPortada: "Imagenes/Mangas/YOZAKURA -T1.jpg",
         volumenes: [
-            { tomo: 1, precio: 8990, stock: 8, img: "https://via.placeholder.com/200x280/333?text=Manga+20+Vol+1" },
-            { tomo: 2, precio: 15990, stock: 10, img: "https://via.placeholder.com/200x280/333?text=Manga+20+Vol+2" }
+            { tomo: 1, precio: 13990, stock: 8, img: "Imagenes/Mangas/YOZAKURA -T1.jpg" },
+            { tomo: 2, precio: 13990, stock: 10, img: "Imagenes/Mangas/YF-T2.jpg" }
         ]
     }
 ];
