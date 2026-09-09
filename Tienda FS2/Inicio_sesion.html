@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Inicio sesion</title>
-     <style>
+    <style>
         body {
             background-image: url('Imagenes/logo+nombre.jpg');
             background-size: auto;
@@ -17,22 +17,25 @@
     </style>
 </head>
 <body>
-    <section class="form-register">
-        <h4>Iniciar sesión</h4>
-        <form id="formLogin" novalidate>
-            <input class="controls" type="email" name="correo" id="correo" placeholder="ingrese su correo">
-            <span class="error" id="error-correo"></span>
+<section class="form-register">
+    <a href="Inicio tienda.html" title="Volver al inicio" style="display:block; text-align:center; margin-bottom:15px;">
+        <img src="Imagenes/Adobe Express - file.png" alt="Animate Ltda." style="width:55px; height:55px; border-radius:50%;">
+    </a>
+    <h4>Iniciar sesión</h4>
+    <form id="formLogin" novalidate>
+        <input class="controls" type="email" name="correo" id="correo" placeholder="ingrese su correo">
+        <span class="error" id="error-correo"></span>
 
-            <input class="controls" type="password" name="contrasenia" id="contrasenia" placeholder="ingrese su contrasenia">
-            <span class="error" id="error-contrasenia"></span>
+        <input class="controls" type="password" name="contrasenia" id="contrasenia" placeholder="ingrese su contrasenia">
+        <span class="error" id="error-contrasenia"></span>
 
-            <span class="error" id="error-login"></span>
+        <span class="error" id="error-login"></span>
 
-            <button class="button" type="submit">Iniciar sesion</button>
-        </form>
-        <p><a href="Registro.html">No tengo cuenta</a></p>
-    </section>
+        <button class="button" type="submit">Iniciar sesion</button>
+    </form>
+    <p><a href="Registro.html">No tengo cuenta</a></p>
+</section>
 
-    <script src="script.js"></script>
+<script src="js/usuarios.js"></script>
 </body>
 </html>
