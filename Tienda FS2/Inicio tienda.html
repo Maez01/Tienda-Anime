@@ -32,10 +32,11 @@
                                 <li><a class="dropdown-item" href="Figuras.html">Figuras</a></li>
                                 <li><a class="dropdown-item" href="Merchandaising.html">Merchandaising</a></li>
                                 <li><a class="dropdown-item" href="Tecnologia.html">Tecnología</a></li>
+                                <li><a class="dropdown-item" href="Preventas.html">Preventas</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Contáctanos</a>
+                            <a class="nav-link" href="#Contacto" aria-disabled="true">Contáctanos</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
@@ -45,7 +46,7 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-1" href="carrito.html">
-                                <img src="Iconos/shopping_cart.png" class="imagen35x35">
+                                <img src="Iconos/share.png" class="imagen35x35">
                                 Carrito <span id="contador-carrito" class="badge bg-danger rounded-pill">0</span>
                             </a>
                         </li>
@@ -110,8 +111,8 @@
 
     <!-- Barra de búsqueda -->
     <section id="barra_de_busqueda" class="container my-4">
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar productos..." aria-label="Search"/>
+        <form class="d-flex" role="search" id="formBusquedaHome">
+            <input class="form-control me-2" type="search" id="inputBusquedaHome" placeholder="Buscar productos..." aria-label="Search"/>
             <button class="btnSearch" type="submit">Buscar</button>
         </form> <!-- Etiqueta de cierre añadida correctamente -->
     </section>
@@ -120,60 +121,129 @@
     <section id="productos_disponibles">
         <h3 class="descripcionCategoria" style="text-align: center;"> Productos disponibles en la tienda </h3>
         <!--MANGAS-->
-        <h2 class="tituloCatCuerpo" style="text-align: center;">Mangas</h2>
+        <div class="filaCategoria">
+        <h2 class="tituloCatCuerpo">Mangas</h2>
+        <button class="button"><a href="Mangas.html">Ver más</a></button>
+        </div>
         <div class="contenedorProductos">
-            <img src="Imagenes/Mangas/1000151041.jpg" class="imagenPequena my-4" >
-            <img src="Imagenes/Mangas/1000151047.jpg" class="imagenPequena my-4">
-            <img src="Imagenes/Mangas/1000151049.jpg" class="imagenPequena my-4">
-            <img src="Imagenes/Mangas/1000151051.jpg" class="imagenPequena my-4">
-            <button class="btnVerMas"><a href="Mangas.html">Ver más</a></button>
+            <a href="Mangas.html?manga=4"><img src="Imagenes/Mangas/Call of the night T1.jpg" class="imagenPequena my-4" ></a>
+            <a href="Mangas.html?manga=8"><img src="Imagenes/Mangas/Dimension W T-1.jpg" class="imagenPequena my-4"></a>
+            <a href="Mangas.html?manga=17"><img src="Imagenes/Mangas/RE ZERO -T1.jpg" class="imagenPequena my-4"></a>
+            <a href="Mangas.html?manga=10"><img src="Imagenes/Mangas/GANGASTA -T1 copy.jpg" class="imagenPequena my-4"></a>
         </div>
 
         <!--FIGURAS-->
-        <h2 class="tituloCatCuerpo" style="text-align: center;">Figuras</h2>
+        <div class="filaCategoria">
+        <h2 class="tituloCatCuerpo">Figuras</h2>
+        <button class="button"><a href="Figuras.html">Ver más</a></button>
+        </div>
         <div class="contenedorProductos">
-            <img src="Imagenes/Figuras/1e6aa15b949d18a629e9eda3fc969170.webp" class="imagenPequena my-4" >
-            <img src="Imagenes/Figuras/c14d353dd8fe2cdcf88a81682072cf7b.webp" class="imagenPequena my-4" >
-            <img src="Imagenes/Figuras/Captura de pantalla 2026-08-30 212734.png" class="imagenPequena my-4" >
-            <img src="Imagenes/Figuras/WUeYp1iERvxfjGhtL0D52VSa4Z9d6MKB.webp" class="imagenPequena my-4" >
-            <button class="btnVerMas"><a href="Figuras.html">Ver más</a></button>
+            <a href="Figuras.html"><img src="Imagenes/Figuras/1e6aa15b949d18a629e9eda3fc969170.webp" class="imagenPequena my-4" ></a>
+            <a href="Figuras.html"><img src="Imagenes/Figuras/c14d353dd8fe2cdcf88a81682072cf7b.webp" class="imagenPequena my-4" ></a>
+            <a href="Figuras.html"><img src="Imagenes/Figuras/Captura de pantalla 2026-08-30 212734.png" class="imagenPequena my-4" ></a>
+            <a href="Figuras.html"><img src="Imagenes/Figuras/WUeYp1iERvxfjGhtL0D52VSa4Z9d6MKB.webp" class="imagenPequena my-4" ></a>
         </div>
 
         <!--MERCHANDAISING-->
-        <h2 class="tituloCatCuerpo" style="text-align: center;">Merchandaising</h2>
+        <div class="filaCategoria">
+        <h2 class="tituloCatCuerpo">Merchandaising</h2>
+        <button class="button"><a href="Merchandaising.html">Ver más</a></button>
+        </div>
         <div class="contenedorProductos">
-            <img src="Imagenes/Merch/GOODS-04846648.jpg" class="imagenPequena my-4" >
-            <img src="Imagenes/Merch/punishing-gray-raven-coating-reflective-badge-4-600x557.webp" class="imagenPequena my-4" >
-            <img src="Imagenes/Merch/punishing-gray-raven-lets-play-series-plushie-toy-1-600x544.webp" class="imagenPequena my-4" >
-            <img src="Imagenes/Merch/punishing-gray-raven-lucia-inverse-crown-frame-crossbody-bag-1-600x563.webp" class="imagenPequena my-4" >
-            <button class="btnVerMas"><a href="Merchandaising.html">Ver más</a></button>
+            <a href="Merchandaising.html"><img src="Imagenes/Merch/GOODS-04846648.jpg" class="imagenPequena my-4" ></a>
+            <a href="Merchandaising.html"><img src="Imagenes/Merch/punishing-gray-raven-coating-reflective-badge-4-600x557.webp" class="imagenPequena my-4" ></a>
+            <a href="Merchandaising.html"><img src="Imagenes/Merch/punishing-gray-raven-lets-play-series-plushie-toy-1-600x544.webp" class="imagenPequena my-4" ></a>
+            <a href="Merchandaising.html"><img src="Imagenes/Merch/punishing-gray-raven-lucia-inverse-crown-frame-crossbody-bag-1-600x563.webp" class="imagenPequena my-4" ></a>
         </div>
 
         <!--TECNOLOGIA-->
-        <h2 class="tituloCatCuerpo" style="text-align: center;">Tecnologia</h2>
+        <div class="filaCategoria">
+        <h2 class="tituloCatCuerpo">Tecnologia</h2>
+        <button class="button"><a href="Tecnologia.html">Ver más</a></button>
+        </div>
         <div class="contenedorProductos">
-            <img src="Imagenes/Tecnologia/175456579928.png" class="imagenPequena my-4" >
-            <img src="Imagenes/Tecnologia/1754566177707.png" class="imagenPequena my-4" >
-            <img src="Imagenes/Tecnologia/1754566417640.png" class="imagenPequena my-4" >
-            <img src="Imagenes/Tecnologia/rog-strix-helios-ii-hatsune-miku-edition.png" class="imagenPequena my-4" >
-            <button class="btnVerMas"><a href="Tecnologia.html">Ver más</a></button>
+            <a href="Tecnologia.html"><img src="Imagenes/Tecnologia/175456579928.png" class="imagenPequena my-4" ></a>
+            <a href="Tecnologia.html"><img src="Imagenes/Tecnologia/1754566177707.png" class="imagenPequena my-4" ></a>
+            <a href="Tecnologia.html"><img src="Imagenes/Tecnologia/1754566417640.png" class="imagenPequena my-4" ></a>
+            <a href="Tecnologia.html"><img src="Imagenes/Tecnologia/rog-strix-helios-ii-hatsune-miku-edition.png" class="imagenPequena my-4" ></a>
         </div>
 
     </section>
 
     <!--Preventa de productos-->
     <section id="Preventa">
-        <h3 class="descripcionCategoria" style="text-align: center;">Preventas</h3>
+        <div class="filaCategoria">
+        <h3 class="tituloCatCuerpo">Preventas</h3>
+        <button class="button"><a href="Preventas.html">Ver más</a></button>
+        </div>
          <div class="contenedorProductos">
-            <img src="Imagenes/Preventas/HCTRfgSc5s8e6A9ytjdQPxnzE4BZ1ibp.webp" class="imagenPequena my-4" >
-            <img src="Imagenes/Preventas/sq3ihpf7_acb2ce34_thumbnail_4096.png" class="imagenPequena my-4">
-            <img src="Imagenes/Preventas/NieRAutomata_Music_Box_Amusement_Park__70851__47212.webp" class="imagenPequena my-4">
-            <img src="Imagenes/Preventas/9781646093977.d_29__25487.webp" class="imagenPequena my-4">
-            <button class="btnVerMas"><a href="Preventas.html">Ver más</a></button>
+            <a href="Preventas.html"><img src="Imagenes/Preventas/HCTRfgSc5s8e6A9ytjdQPxnzE4BZ1ibp.webp" class="imagenPequena my-4" ></a>
+            <a href="Preventas.html"><img src="Imagenes/Preventas/sq3ihpf7_acb2ce34_thumbnail_4096.png" class="imagenPequena my-4"></a>
+            <a href="Preventas.html"><img src="Imagenes/Preventas/NieRAutomata_Music_Box_Amusement_Park__70851__47212.webp" class="imagenPequena my-4"></a>
+            <a href="Preventas.html"><img src="Imagenes/Preventas/9781646093977.d_29__25487.webp" class="imagenPequena my-4"></a>
         </div>
     </section>
 
+    <!--Footer informativo-->
+    <section id="Footer informativo">
+        <footer class="footerTienda">
+            <div class="footerContenedor">
+                <div class="footerColumna">
+                    <h4>Animate Ltda</h4>
+                    <p>Tu tienda de productos anime favorita, donde encontraras todo lo que buscas y mucho más</p>
+                </div>
 
+                <div class="footerColumna">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="Mangas.html">Mangas</a></li>
+                        <li><a href="Figuras.html">Figuras</a></li>
+                        <li><a href="Merchandaising.html">Merchandaising</a></li>
+                        <li><a href="Tecnologia.html">Tecnologia</a></li>
+                        <li><a href="Preventas.html">Preventas</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerColumna" id="Contacto">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>Email: infoayuda@animate.cl</li>
+                        <li>Whatsapp: +569-28593301</li>
+                        <li>Ubicacion: Villa alemana 1895</li>
+                    </ul>
+                </div>
+
+                <div class="footerColumna">
+                    <h4>Siguenos</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/maesmaez96?stkn=MXBoMjkwODI4eHU1YQ==">Instagram</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerCopyRight">
+                    <p>&copy; 2026 Tienda Animate Ltda. Todos los derechos reservados </p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!--Script para poder hacer funcionar la barra de busqueda-->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const formBusquedaHome = document.getElementById("formBusquedaHome");
+        const inputBusquedaHome = document.getElementById("inputBusquedaHome");
+
+        if (formBusquedaHome) {
+            formBusquedaHome.addEventListener("submit", (evento) => {
+                evento.preventDefault();
+                const termino = inputBusquedaHome.value.trim();
+                if (termino) {
+                    window.location.href = `Mangas.html?buscar=${encodeURIComponent(termino)}`;
+                }
+            });
+        }
+    });
+    </script>
     <!-- JS de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 

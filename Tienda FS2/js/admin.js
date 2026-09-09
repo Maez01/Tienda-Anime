@@ -1,10 +1,6 @@
 // =========================================================================
 // admin.js — SOLO PARA admin.html
 // =========================================================================
-// Requiere, cargados ANTES que este archivo:
-//   1) datos-mangas.js     (define baseDatosMangas)
-//   2) datos-productos.js  (define obtenerCatalogoCompleto, agregarManga, eliminarManga)
-//   3) usuarios.js         (define obtenerSesion, cerrarSesion)
 
 // ---------- Guardia de acceso: solo entra un Admin logueado ----------
 const sesionActual = obtenerSesion();
