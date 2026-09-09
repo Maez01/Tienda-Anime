@@ -160,5 +160,20 @@ document.addEventListener("DOMContentLoaded", () => {
     filtroGenero.addEventListener("change", procesarFiltros);
     filtroOrden.addEventListener("change", procesarFiltros);
     buscarManga.addEventListener("input", procesarFiltros);
+    
+
+     // ESTA PARTE ES PARA LOS CLICKS DESDE LAS IMAGENES DE INICIO
+    const parametros = new URLSearchParams(window.location.search);
+    const busquedaDesdeUrl = parametros.get("buscar");
+    if (busquedaDesdeUrl) {
+        buscarManga.value = busquedaDesdeUrl;
+    }
+
     procesarFiltros();
+    
+    const mangaIdDesdeUrl = parametros.get("manga");
+
+    if (mangaIdDesdeUrl) {
+        abrirModalVolumenes(parseInt(mangaIdDesdeUrl, 10));
+    }
 });
