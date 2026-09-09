@@ -2,38 +2,46 @@
    VARIABLES GLOBALES (Buenas prácticas para reutilizar estilos)
    ========================================================================= */
 :root {
-    --borde-blanco: 
-        -3px -3px 0 #ffffff,
-         3px -3px 0 #ffffff,
-        -3px  3px 0 #ffffff,
-         3px  3px 0 #ffffff,
-        -3px  0px 0 #ffffff,
-         3px  0px 0 #ffffff,
-         0px -3px 0 #ffffff,
-         0px  3px 0 #ffffff;
+    --borde-blanco:
+            -3px -3px 0 #ffffff,
+            3px -3px 0 #ffffff,
+            -3px  3px 0 #ffffff,
+            3px  3px 0 #ffffff,
+            -3px  0px 0 #ffffff,
+            3px  0px 0 #ffffff,
+            0px -3px 0 #ffffff,
+            0px  3px 0 #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* =========================================================================
    ESTILOS DE IMÁGENES
    ========================================================================= */
 .imagenPequena {
-    width: 350px; /* Corregido: sin espacio entre el número y px */
-    height: 370px;
+    width: 400px;
+    height: auto;
     border-radius: 10px;
     cursor: pointer;
 }
 
 .imagenMediana {
-    width: 60%; 
+    width: 60%;
     height: 500px;
     object-fit: cover;
     display: block;
     margin: 0 auto;
 }
+
 .imagen35x35{
     width: 35px;
     height: 35px;
 }
+
 /* =========================================================================
    ESTILOS DE TEXTO (CARRUSEL / TEXTOS SOBRE IMÁGENES)
    ========================================================================= */
@@ -42,7 +50,7 @@
     font-size: 45px;
     font-weight: 500;
     color: black;
-    text-shadow: var(--borde-blanco); /* Usando la variable de arriba */
+    text-shadow: var(--borde-blanco);
 }
 
 .descripcionCategoria {
@@ -82,6 +90,7 @@
     color: white;
     text-decoration: none;
 }
+
 /* =========================================================================
  ESTILOS DE TEXTO EN PAGINA
    ========================================================================= */
@@ -100,74 +109,11 @@
     display: flex;
     justify-content: center;
     gap: 15px;
-
 }
 
-body {
-    background-image: url('Imagenes/logo+nombre cuadrado.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-
-
-.imagenPequena{
-    width: 400 px;
-    height: auto;
-}
-
-.imagenMediana{
-    width: 60% ;
-    height: 500px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-}
-
-.tituloCategoria{
-    font-family: fantasy;
-    font-size: 45px;
-    font-weight: 500;
-    color: black;
-
-    text-shadow: 
-        -3px -3px 0 #ffffff,
-         3px -3px 0 #ffffff,
-        -3px  3px 0 #ffffff,
-         3px  3px 0 #ffffff,
-        -3px  0px 0 #ffffff,
-         3px  0px 0 #ffffff,
-         0px -3px 0 #ffffff,
-         0px  3px 0 #ffffff;
-}
-
-.descripcionCategoria{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 900;
-    color: black;
-
-     text-shadow: 
-        -3px -3px 0 #ffffff,
-         3px -3px 0 #ffffff,
-        -3px  3px 0 #ffffff,
-         3px  3px 0 #ffffff,
-        -3px  0px 0 #ffffff,
-         3px  0px 0 #ffffff,
-         0px -3px 0 #ffffff,
-         0px  3px 0 #ffffff;
-}
-
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* =========================================================================
+   FORMULARIOS DE LOGIN / REGISTRO
+   ========================================================================= */
 .form-register{
     width: 400px;
     background: #24303c;
@@ -178,13 +124,11 @@ body {
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #d1caca;
-
 }
 
 .form-register h4{
     font-size: 22px;
     margin-bottom: 20px;
-
 }
 
 .controls{
@@ -203,17 +147,7 @@ body {
     height: 40px;
     text-align: center;
     font-size: 18px;
-
 }
-
-body {
-    background-image: url('fondo-celeste.avif');
-    background-size: cover;       
-    background-position: center; 
-    background-repeat: no-repeat; 
-    min-height: 100vh; 
-
-}          
 
 .form-register a:hover{
     color: white;
@@ -222,7 +156,7 @@ body {
 
 .form-register a {
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .form-register .button{
@@ -232,57 +166,6 @@ body {
     padding: 12px;
     color: white;
     margin: 16px 0;
-
-}
-
-/* =========================================================================
-   VARIABLES GLOBALES (Buenas prácticas para reutilizar estilos)
-   ========================================================================= */
-:root {
-    --borde-blanco: 
-        -3px -3px 0 #ffffff,
-         3px -3px 0 #ffffff,
-        -3px  3px 0 #ffffff,
-         3px  3px 0 #ffffff,
-        -3px  0px 0 #ffffff,
-         3px  0px 0 #ffffff,
-         0px -3px 0 #ffffff,
-         0px  3px 0 #ffffff;
-}
-
-/* =========================================================================
-   ESTILOS DE IMÁGENES
-   ========================================================================= */
-.imagenPequena {
-    width: 400px; /* Corregido: sin espacio entre el número y px */
-    height: auto;
-}
-
-.imagenMediana {
-    width: 60%; 
-    height: 500px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-}
-
-/* =========================================================================
-   ESTILOS DE TEXTO (CARRUSEL / TEXTOS SOBRE IMÁGENES)
-   ========================================================================= */
-.tituloCategoria {
-    font-family: fantasy;
-    font-size: 45px;
-    font-weight: 500;
-    color: black;
-    text-shadow: var(--borde-blanco); /* Usando la variable de arriba */
-}
-
-.descripcionCategoria {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 900;
-    color: black;
-    text-shadow: var(--borde-blanco); /* Reutilizando la misma variable */
 }
 
 /* =========================================================================
@@ -317,6 +200,5 @@ body {
 
 #contenedor-tomos .card:hover {
     transform: scale(1.05);
-    border-color: #ffc107 !important; /* Resalta el borde con el color warning de Bootstrap */
+    border-color: #ffc107 !important;
 }
-

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
-    <!-- Bootstrap CDN -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- Tu CSS referenciado correctamente dentro de su carpeta -->
+
     <link href="css/estilos.css" rel="stylesheet">
     <style>
         body {
@@ -19,50 +19,70 @@
     </style>
 </head>
 <body>
-    <!-- Barra superior -->
-    <section id="barra_superior">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <img src="Imagenes/Adobe Express - file.png" height="40px" width="40px">
-                <a class="navbar-brand fw-bold" href="#">Animate Ltda.</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Categorías
-                            </a>
-                            <ul class="dropdown-menu">
-                                <!-- Enlaces corregidos según tus archivos reales -->
-                                <li><a class="dropdown-item" href="Mangas.html">Mangas</a></li>
-                                <li><a class="dropdown-item" href="Figuras.html">Figuras</a></li>
-                                <li><a class="dropdown-item" href="Merchandaising.html">Merchandaising</a></li>
-                                <li><a class="dropdown-item" href="Tecnologia.html">Tecnología</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Contáctanos</a>
-                        </li>
-                    </ul> 
-                    <ul class="navbar-nav">
-                        <img src="Iconos/user_circle.png" class="imagen35x35">
-                        <li class="nav-item"><a class="nav-link" href="Inicio_sesion.html">Inicio sesion</a></li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <img src="Iconos/share.png" class="imagen35x35">
-                        <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
-                    </ul>                     
-                </div>
+<!-- Barra superior -->
+<section id="barra_superior">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="Imagenes/Adobe Express - file.png" height="40px" width="40px">
+            <a class="navbar-brand fw-bold" href="Inicio tienda.html">Animate Ltda.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorías
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- Enlaces corregidos según tus archivos reales -->
+                            <li><a class="dropdown-item" href="Mangas.html">Mangas</a></li>
+                            <li><a class="dropdown-item" href="Figuras.html">Figuras</a></li>
+                            <li><a class="dropdown-item" href="Merchandaising.html">Merchandaising</a></li>
+                            <li><a class="dropdown-item" href="Tecnologia.html">Tecnología</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Contáctanos</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <img src="Iconos/user_circle.png" class="imagen35x35">
+                    <li class="nav-item"><a class="nav-link" href="Inicio_sesion.html">Inicio sesion</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-1" href="carrito.html">
+                            <img src="Iconos/shopping_cart.png" class="imagen35x35">
+                            Carrito <span id="contador-carrito" class="badge bg-danger rounded-pill">0</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </section>
+        </div>
+    </nav>
+</section>
 
-    <!-- JS de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
-    <!-- Tu archivo de JavaScript referenciado correctamente según el nombre que elijas (ej: app.js) -->
-    <script src="js/app.js"></script>
+<!-- Contenido del carrito -->
+<div class="container my-5">
+    <div class="bg-white rounded shadow-sm p-4">
+        <h2 class="fw-bold mb-4">Tu Carrito de Compras</h2>
+
+        <div id="Lista-carrito"></div>
+
+        <div class="d-flex justify-content-between align-items-center border-top pt-3 mt-3">
+            <h5 class="fw-bold mb-0">Total: $<span id="total">0</span></h5>
+            <button id="btn-finalizar-compra" class="btn btn-success fw-bold">Finalizar compra</button>
+        </div>
+    </div>
+</div>
+
+<!-- JS de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<!-- Motor del carrito + datos + pintado de esta página -->
+<script src="js/datos-mangas.js"></script>
+<script src="js/carrito.js"></script>
+<script src="js/pagina-carrito.js"></script>
 </body>
 </html>
