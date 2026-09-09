@@ -1,6 +1,17 @@
 // =========================================================================
-// catalogo-mangas.js
+// catalogo-mangas.js — SOLO PARA Mangas.html
 // =========================================================================
+// Renderiza las tarjetas en #contenedor-mangas, llena el modal de tomos en
+// #contenedor-tomos y conecta cada botón "Comprar" al carrito. Mantiene los
+// filtros de búsqueda / género / orden.
+//
+// Requiere, cargados ANTES que este archivo:
+//   1) datos-mangas.js     (define baseDatosMangas)
+//   2) datos-productos.js  (define obtenerCatalogoCompleto, con lo del admin)
+//   3) carrito.js          (define agregarAlCarrito, formatearPrecio, etc.)
+//
+// Cuando tengas Figuras, este archivo es el molde para catalogo-figuras.js
+// (mismo patrón: leer su array de datos, armar tarjetas, conectar "Comprar").
 
 const contenedorMangas = document.getElementById("contenedor-mangas");
 const filtroGenero = document.getElementById("filtroGenero");
@@ -11,7 +22,7 @@ const buscarManga = document.getElementById("buscarManga");
  * Renderiza las tarjetas de mangas dentro de #contenedor-mangas.
  * No hace nada si no estamos en Mangas.html (evita errores en el resto del sitio).
  */
-function renderizarMangas(lista = baseDatosMangas) {
+function renderizarMangas(lista = obtenerCatalogoCompleto()) {
     if (!contenedorMangas) return;
 
     contenedorMangas.innerHTML = "";
@@ -55,7 +66,7 @@ function renderizarMangas(lista = baseDatosMangas) {
  * Abre el modal de Bootstrap y lo llena con los tomos del manga seleccionado.
  */
 function abrirModalVolumenes(mangaId) {
-    const manga = baseDatosMangas.find(m => m.id === mangaId);
+    const manga = obtenerCatalogoCompleto().find(m => m.id === mangaId);
     if (!manga) return;
 
     document.getElementById("modalMangaTitulo").textContent = manga.titulo;
@@ -124,7 +135,7 @@ function abrirModalVolumenes(mangaId) {
  * Procesa los filtros de género, ordenamiento y caja de texto de forma combinada.
  */
 function procesarFiltros() {
-    let filtrados = baseDatosMangas.filter(manga => {
+    let filtrados = obtenerCatalogoCompleto().filter(manga => {
         const cumpleGenero = filtroGenero.value === "todos" || manga.genero.toLowerCase() === filtroGenero.value.toLowerCase();
         const cumpleBusqueda = manga.titulo.toLowerCase().includes(buscarManga.value.toLowerCase());
         return cumpleGenero && cumpleBusqueda;

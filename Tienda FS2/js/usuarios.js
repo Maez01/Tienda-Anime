@@ -31,6 +31,24 @@ function obtenerTodosUsuarios() {
     return usuariosBase.concat(usuariosRegistrados);
 }
 
+// ---------- Sesión del usuario logueado (se borra al cerrar la ventana) ----------
+const SESION_KEY = "usuarioActual";
+
+function guardarSesion(usuario) {
+    // Se guarda sin la contraseña, no hace falta tenerla dando vueltas.
+    const { nombre, apellido, correo, rol } = usuario;
+    sessionStorage.setItem(SESION_KEY, JSON.stringify({ nombre, apellido, correo, rol }));
+}
+
+function obtenerSesion() {
+    const data = sessionStorage.getItem(SESION_KEY);
+    return data ? JSON.parse(data) : null;
+}
+
+function cerrarSesion() {
+    sessionStorage.removeItem(SESION_KEY);
+}
+
 // Solo letras y espacios (incluye tildes y ñ)
 const soloLetras = /^[A-Za-zÁÉÍÓÚÑáéíóúñ\s]+$/;
 // Formato básico de correo
@@ -142,14 +160,12 @@ function iniciarSesion(event) {
 
 // ---------- Redirección según el rol ----------
 function redirigirSegunRol(usuario) {
+    guardarSesion(usuario);
+
     if (usuario.rol === "Admin") {
-
-        // Reemplazar "link_pagina.html" por la página real
-        window.location.href = "link_pagina.html";
-
-    } else if (usuario.rol === "Usuario") {
-        // Reemplazar "link_pagina.html" por la página real
-        window.location.href = "link_pagina.html";
+        window.location.href = "admin.html";
+    } else {
+        window.location.href = "Inicio tienda.html";
     }
 }
 
@@ -163,4 +179,16 @@ const formLogin = document.getElementById("formLogin");
 if (formLogin) {
     formLogin.addEventListener("submit", iniciarSesion);
 }
+
+// ---------- Mostrar el link "Panel Admin" solo si hay un Admin logueado ----------
+// Requiere que la página tenga en su navbar: <li id="nav-admin-link" style="display:none">...
+function actualizarNavSesion() {
+    const linkAdmin = document.getElementById("nav-admin-link");
+    if (!linkAdmin) return; // esta página no tiene ese link en su navbar
+
+    const sesion = obtenerSesion();
+    linkAdmin.style.display = (sesion && sesion.rol === "Admin") ? "" : "none";
+}
+
+actualizarNavSesion();
 
