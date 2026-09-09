@@ -1,6 +1,21 @@
 // =========================================================================
 // carrito.js — MOTOR DEL CARRITO DE COMPRAS (genérico, no depende de mangas)
 // =========================================================================
+// Se guarda en localStorage (a diferencia de los usuarios registrados, que
+// usan sessionStorage) para que sobreviva entre pestañas, recargas y cierres
+// del navegador.
+//
+// Cárgalo en TODA página que tenga el ícono/contador del carrito en la
+// navbar: Mangas.html, carrito.html, Inicio tienda.html, etc.
+//
+// Requiere que exista una variable global "baseDatosMangas" (la define
+// datos-mangas.js) SOLO para poder validar el stock disponible al agregar o
+// cambiar cantidades — si datos-mangas.js no está cargado, igual funciona,
+// simplemente no limita por stock (obtenerVolumen devuelve null).
+// Cuando agregues Figuras u otra categoría con su propio archivo de datos,
+// este mismo motor les sirve tal cual: solo cambia qué "item" le pasas a
+// agregarAlCarrito({ mangaId, titulo, tomo, precio, img }) — el nombre de
+// los campos es heredado de mangas, pero no le importa el origen del dato.
 
 const CARRITO_KEY = "carritoAnimate";
 
@@ -35,8 +50,18 @@ function guardarCarrito(carrito) {
  * Se usa para no dejar agregar/incrementar más unidades de las disponibles.
  */
 function obtenerVolumen(mangaId, tomo) {
-    if (typeof baseDatosMangas === "undefined") return null; // datos-mangas.js no está cargado en esta página
-    const manga = baseDatosMangas.find(m => m.id === mangaId);
+    // Si existe datos-productos.js, usamos el catálogo completo (base + lo que
+    // haya agregado/eliminado el admin). Si no, caemos a baseDatosMangas tal cual.
+    let catalogo;
+    if (typeof obtenerCatalogoCompleto === "function") {
+        catalogo = obtenerCatalogoCompleto();
+    } else if (typeof baseDatosMangas !== "undefined") {
+        catalogo = baseDatosMangas;
+    } else {
+        return null; // datos-mangas.js no está cargado en esta página
+    }
+
+    const manga = catalogo.find(m => m.id === mangaId);
     if (!manga) return null;
     return manga.volumenes.find(v => v.tomo === tomo) || null;
 }

@@ -11,170 +11,174 @@
 </head>
 <body style="background-color: darkgray;">
 
-<!-- Barra superior -->
-<section id="barra_superior">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <img src="Imagenes/Adobe Express - file.png" height="40px" width="40px">
-            <a class="navbar-brand fw-bold" href="#">Animate Ltda.</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <!-- Barra superior -->
+    <section id="barra_superior">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="Imagenes/Adobe Express - file.png" height="40px" width="40px">
+                <a class="navbar-brand fw-bold" href="#">Animate Ltda.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorías
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- Enlaces corregidos según tus archivos reales -->
+                                <li><a class="dropdown-item" href="Mangas.html">Mangas</a></li>
+                                <li><a class="dropdown-item" href="Figuras.html">Figuras</a></li>
+                                <li><a class="dropdown-item" href="Merchandaising.html">Merchandaising</a></li>
+                                <li><a class="dropdown-item" href="Tecnologia.html">Tecnología</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Contáctanos</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <img src="Iconos/user_circle.png" class="imagen35x35">
+                        <li class="nav-item"><a class="nav-link" href="Inicio_sesion.html">Inicio sesion</a></li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-1" href="carrito.html">
+                                <img src="Iconos/shopping_cart.png" class="imagen35x35">
+                                Carrito <span id="contador-carrito" class="badge bg-danger rounded-pill">0</span>
+                            </a>
+                        </li>
+                        <li class="nav-item" id="nav-admin-link" style="display:none">
+                            <a class="nav-link fw-bold text-danger" href="admin.html">Panel Admin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Carrusel inicio -->
+    <section id="carrusel" >
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="Imagenes/8rRhAkpHGM961nD5FjYP3EBJaNC4mqVx.webp" class="imagenMediana d-block w-100" alt="Figuras">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="tituloCategoria">Figuras</h5>
+                        <p class="descripcionCategoria">Todo tipo de figuras para tu colección</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="Imagenes/175456150960.jpg" class="imagenMediana d-block w-100" alt="Tecnología">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="tituloCategoria">Tecnología</h5>
+                        <p class="descripcionCategoria">Toda la tecnología estilo anime para ti</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="Imagenes/Diseno_sin_título.png" class="imagenMediana d-block w-100" alt="Merchandaising">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="tituloCategoria">Merchandaising</h5>
+                        <p class="descripcionCategoria">Merchandaising de todo tipo de series</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="Imagenes/Banner_Manga_Folleto_Desk_1350_x_430_1.webp" class="imagenMediana d-block w-100" alt="Mangas">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="tituloCategoria">Mangas</h5>
+                        <p class="descripcionCategoria">Todos los mangas para ti</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Categorías
-                        </a>
-                        <ul class="dropdown-menu">
-                            <!-- Enlaces corregidos según tus archivos reales -->
-                            <li><a class="dropdown-item" href="Mangas.html">Mangas</a></li>
-                            <li><a class="dropdown-item" href="Figuras.html">Figuras</a></li>
-                            <li><a class="dropdown-item" href="Merchandaising.html">Merchandaising</a></li>
-                            <li><a class="dropdown-item" href="Tecnologia.html">Tecnología</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Contáctanos</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <img src="Iconos/user_circle.png" class="imagen35x35">
-                    <li class="nav-item"><a class="nav-link" href="Inicio_sesion.html">Inicio sesion</a></li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center gap-1" href="carrito.html">
-                            <img src="Iconos/shopping_cart.png" class="imagen35x35">
-                            Carrito <span id="contador-carrito" class="badge bg-danger rounded-pill">0</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </nav>
-</section>
+    </section>
 
-<!-- Carrusel inicio -->
-<section id="carrusel" >
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <!-- Barra de búsqueda -->
+    <section id="barra_de_busqueda" class="container my-4">
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar productos..." aria-label="Search"/>
+            <button class="btnSearch" type="submit">Buscar</button>
+        </form> <!-- Etiqueta de cierre añadida correctamente -->
+    </section>
+
+    <!--Productos disponibles-->
+    <section id="productos_disponibles">
+        <h3 class="descripcionCategoria" style="text-align: center;"> Productos disponibles en la tienda </h3>
+        <!--MANGAS-->
+        <h2 class="tituloCatCuerpo" style="text-align: center;">Mangas</h2>
+        <div class="contenedorProductos">
+            <img src="Imagenes/Mangas/1000151041.jpg" class="imagenPequena my-4" >
+            <img src="Imagenes/Mangas/1000151047.jpg" class="imagenPequena my-4">
+            <img src="Imagenes/Mangas/1000151049.jpg" class="imagenPequena my-4">
+            <img src="Imagenes/Mangas/1000151051.jpg" class="imagenPequena my-4">
+            <button class="btnVerMas"><a href="Mangas.html">Ver más</a></button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-                <img src="Imagenes/8rRhAkpHGM961nD5FjYP3EBJaNC4mqVx.webp" class="imagenMediana d-block w-100" alt="Figuras">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="tituloCategoria">Figuras</h5>
-                    <p class="descripcionCategoria">Todo tipo de figuras para tu colección</p>
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-                <img src="Imagenes/175456150960.jpg" class="imagenMediana d-block w-100" alt="Tecnología">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="tituloCategoria">Tecnología</h5>
-                    <p class="descripcionCategoria">Toda la tecnología estilo anime para ti</p>
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-                <img src="Imagenes/Diseno_sin_título.png" class="imagenMediana d-block w-100" alt="Merchandaising">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="tituloCategoria">Merchandaising</h5>
-                    <p class="descripcionCategoria">Merchandaising de todo tipo de series</p>
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-                <img src="Imagenes/Banner_Manga_Folleto_Desk_1350_x_430_1.webp" class="imagenMediana d-block w-100" alt="Mangas">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="tituloCategoria">Mangas</h5>
-                    <p class="descripcionCategoria">Todos los mangas para ti</p>
-                </div>
-            </div>
+
+        <!--FIGURAS-->
+        <h2 class="tituloCatCuerpo" style="text-align: center;">Figuras</h2>
+        <div class="contenedorProductos">
+            <img src="Imagenes/Figuras/1e6aa15b949d18a629e9eda3fc969170.webp" class="imagenPequena my-4" >
+            <img src="Imagenes/Figuras/c14d353dd8fe2cdcf88a81682072cf7b.webp" class="imagenPequena my-4" >
+            <img src="Imagenes/Figuras/Captura de pantalla 2026-08-30 212734.png" class="imagenPequena my-4" >
+            <img src="Imagenes/Figuras/WUeYp1iERvxfjGhtL0D52VSa4Z9d6MKB.webp" class="imagenPequena my-4" >
+            <button class="btnVerMas"><a href="Figuras.html">Ver más</a></button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</section>
 
-<!-- Barra de búsqueda -->
-<section id="barra_de_busqueda" class="container my-4">
-    <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Buscar productos..." aria-label="Search"/>
-        <button class="btnSearch" type="submit">Buscar</button>
-    </form> <!-- Etiqueta de cierre añadida correctamente -->
-</section>
+        <!--MERCHANDAISING-->
+        <h2 class="tituloCatCuerpo" style="text-align: center;">Merchandaising</h2>
+        <div class="contenedorProductos">
+            <img src="Imagenes/Merch/GOODS-04846648.jpg" class="imagenPequena my-4" >
+            <img src="Imagenes/Merch/punishing-gray-raven-coating-reflective-badge-4-600x557.webp" class="imagenPequena my-4" >
+            <img src="Imagenes/Merch/punishing-gray-raven-lets-play-series-plushie-toy-1-600x544.webp" class="imagenPequena my-4" >
+            <img src="Imagenes/Merch/punishing-gray-raven-lucia-inverse-crown-frame-crossbody-bag-1-600x563.webp" class="imagenPequena my-4" >
+            <button class="btnVerMas"><a href="Merchandaising.html">Ver más</a></button>
+        </div>
 
-<!--Productos disponibles-->
-<section id="productos_disponibles">
-    <h3 class="descripcionCategoria" style="text-align: center;"> Productos disponibles en la tienda </h3>
-    <!--MANGAS-->
-    <h2 class="tituloCatCuerpo" style="text-align: center;">Mangas</h2>
-    <div class="contenedorProductos">
-        <img src="Imagenes/Mangas/1000151041.jpg" class="imagenPequena my-4" >
-        <img src="Imagenes/Mangas/1000151047.jpg" class="imagenPequena my-4">
-        <img src="Imagenes/Mangas/1000151049.jpg" class="imagenPequena my-4">
-        <img src="Imagenes/Mangas/1000151051.jpg" class="imagenPequena my-4">
-        <button class="btnVerMas"><a href="Mangas.html">Ver más</a></button>
-    </div>
+        <!--TECNOLOGIA-->
+        <h2 class="tituloCatCuerpo" style="text-align: center;">Tecnologia</h2>
+        <div class="contenedorProductos">
+            <img src="Imagenes/Tecnologia/175456579928.png" class="imagenPequena my-4" >
+            <img src="Imagenes/Tecnologia/1754566177707.png" class="imagenPequena my-4" >
+            <img src="Imagenes/Tecnologia/1754566417640.png" class="imagenPequena my-4" >
+            <img src="Imagenes/Tecnologia/rog-strix-helios-ii-hatsune-miku-edition.png" class="imagenPequena my-4" >
+            <button class="btnVerMas"><a href="Tecnologia.html">Ver más</a></button>
+        </div>
 
-    <!--FIGURAS-->
-    <h2 class="tituloCatCuerpo" style="text-align: center;">Figuras</h2>
-    <div class="contenedorProductos">
-        <img src="Imagenes/Figuras/1e6aa15b949d18a629e9eda3fc969170.webp" class="imagenPequena my-4" >
-        <img src="Imagenes/Figuras/c14d353dd8fe2cdcf88a81682072cf7b.webp" class="imagenPequena my-4" >
-        <img src="Imagenes/Figuras/Captura de pantalla 2026-08-30 212734.png" class="imagenPequena my-4" >
-        <img src="Imagenes/Figuras/WUeYp1iERvxfjGhtL0D52VSa4Z9d6MKB.webp" class="imagenPequena my-4" >
-        <button class="btnVerMas"><a href="Figuras.html">Ver más</a></button>
-    </div>
+    </section>
 
-    <!--MERCHANDAISING-->
-    <h2 class="tituloCatCuerpo" style="text-align: center;">Merchandaising</h2>
-    <div class="contenedorProductos">
-        <img src="Imagenes/Merch/GOODS-04846648.jpg" class="imagenPequena my-4" >
-        <img src="Imagenes/Merch/punishing-gray-raven-coating-reflective-badge-4-600x557.webp" class="imagenPequena my-4" >
-        <img src="Imagenes/Merch/punishing-gray-raven-lets-play-series-plushie-toy-1-600x544.webp" class="imagenPequena my-4" >
-        <img src="Imagenes/Merch/punishing-gray-raven-lucia-inverse-crown-frame-crossbody-bag-1-600x563.webp" class="imagenPequena my-4" >
-        <button class="btnVerMas"><a href="Merchandaising.html">Ver más</a></button>
-    </div>
-
-    <!--TECNOLOGIA-->
-    <h2 class="tituloCatCuerpo" style="text-align: center;">Tecnologia</h2>
-    <div class="contenedorProductos">
-        <img src="Imagenes/Tecnologia/175456579928.png" class="imagenPequena my-4" >
-        <img src="Imagenes/Tecnologia/1754566177707.png" class="imagenPequena my-4" >
-        <img src="Imagenes/Tecnologia/1754566417640.png" class="imagenPequena my-4" >
-        <img src="Imagenes/Tecnologia/rog-strix-helios-ii-hatsune-miku-edition.png" class="imagenPequena my-4" >
-        <button class="btnVerMas"><a href="Tecnologia.html">Ver más</a></button>
-    </div>
-
-</section>
-
-<!--Preventa de productos-->
-<section id="Preventa">
-    <h3 class="descripcionCategoria" style="text-align: center;">Preventas</h3>
-    <div class="contenedorProductos">
-        <img src="Imagenes/Preventas/HCTRfgSc5s8e6A9ytjdQPxnzE4BZ1ibp.webp" class="imagenPequena my-4" >
-        <img src="Imagenes/Preventas/sq3ihpf7_acb2ce34_thumbnail_4096.png" class="imagenPequena my-4">
-        <img src="Imagenes/Preventas/NieRAutomata_Music_Box_Amusement_Park__70851__47212.webp" class="imagenPequena my-4">
-        <img src="Imagenes/Preventas/9781646093977.d_29__25487.webp" class="imagenPequena my-4">
-        <button class="btnVerMas"><a href="Preventas.html">Ver más</a></button>
-    </div>
-</section>
+    <!--Preventa de productos-->
+    <section id="Preventa">
+        <h3 class="descripcionCategoria" style="text-align: center;">Preventas</h3>
+         <div class="contenedorProductos">
+            <img src="Imagenes/Preventas/HCTRfgSc5s8e6A9ytjdQPxnzE4BZ1ibp.webp" class="imagenPequena my-4" >
+            <img src="Imagenes/Preventas/sq3ihpf7_acb2ce34_thumbnail_4096.png" class="imagenPequena my-4">
+            <img src="Imagenes/Preventas/NieRAutomata_Music_Box_Amusement_Park__70851__47212.webp" class="imagenPequena my-4">
+            <img src="Imagenes/Preventas/9781646093977.d_29__25487.webp" class="imagenPequena my-4">
+            <button class="btnVerMas"><a href="Preventas.html">Ver más</a></button>
+        </div>
+    </section>
 
 
-<!-- JS de Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-<!-- Solo el motor del carrito: esta página no arma catálogo, solo muestra el contador -->
-<script src="js/carrito.js"></script>
+    <!-- Solo el motor del carrito: esta página no arma catálogo, solo muestra el contador -->
+    <script src="js/carrito.js"></script>
+    <script src="js/usuarios.js"></script>
 </body>
 </html>
