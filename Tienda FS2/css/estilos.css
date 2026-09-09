@@ -252,7 +252,7 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
 }
 
-/* Transición suave e higiénica para las imágenes de las portadas */
+/* Transición agradable para la vista de las portadas */
 .card-manga .card-img-top {
     transition: transform 0.3s ease;
 }
