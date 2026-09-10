@@ -1,10 +1,7 @@
 // =========================================================================
 // usuarios.js — REGISTRO Y LOGIN
 // =========================================================================
-// Cárgalo en Inicio_sesion.html y Registro.html. Ojo: esas dos páginas hoy
-// cargan <script src="script.js"> (un archivo que no existe en tu proyecto).
-// Cuando incorpores este archivo, cambia esa etiqueta a
-// <script src="js/usuarios.js"></script> o el login/registro seguirá roto.
+
 
 // ---------- Usuarios base (Admins fijos) ----------
 const usuariosBase = [
