@@ -1,17 +1,7 @@
 // =========================================================================
-// catalogo-mangas.js — SOLO PARA Mangas.html
+//  — SOLO PARA Mangas.html por ahora.
 // =========================================================================
-// Renderiza las tarjetas en #contenedor-mangas, llena el modal de tomos en
-// #contenedor-tomos y conecta cada botón "Comprar" al carrito. Mantiene los
-// filtros de búsqueda / género / orden.
-//
-// Requiere, cargados ANTES que este archivo:
-//   1) datos-mangas.js     (define baseDatosMangas)
-//   2) datos-productos.js  (define obtenerCatalogoCompleto, con lo del admin)
-//   3) carrito.js          (define agregarAlCarrito, formatearPrecio, etc.)
-//
-// Cuando tengas Figuras, este archivo es el molde para catalogo-figuras.js
-// (mismo patrón: leer su array de datos, armar tarjetas, conectar "Comprar").
+
 
 const contenedorMangas = document.getElementById("contenedor-mangas");
 const filtroGenero = document.getElementById("filtroGenero");
@@ -87,8 +77,10 @@ function abrirModalVolumenes(mangaId) {
                 <div class="card-body p-1 d-flex flex-column justify-content-between">
                     <h6 class="card-title my-1 fs-6">Vol. ${vol.tomo}</h6>
                     <p class="text-warning mb-1 fw-bold">${formatearPrecio(vol.precio)}</p>
-                    <p class="mb-1 small ${sinStock ? "text-danger" : "text-success"} fw-bold">
+                    <p class="mb-1">
+                    <span class="badge ${sinStock ? "bg-danger" : "bg-success"}">
                         ${sinStock ? "Agotado" : "Stock: " + vol.stock + " u."}
+                    </span>
                     </p>
                     <button
                         class="btn btn-warning btn-sm mt-2 fw-bold w-100 btn-comprar-tomo"
