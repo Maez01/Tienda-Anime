@@ -31,8 +31,7 @@ function guardarPapelera(lista) {
 }
 
 /**
- * Genera un id nuevo que nunca choca con ninguno ya usado (ni siquiera con
- * uno que esté en la papelera).
+ * Genera un id nuevo que nunca choca con ninguno ya usado.
  */
 function generarNuevoIdManga() {
     const idsCatalogo = obtenerCatalogoCompleto().map(m => m.id);
@@ -41,8 +40,7 @@ function generarNuevoIdManga() {
 }
 
 /**
- * Agrega un manga nuevo (versión básica: 1 solo tomo).
- * @param {Object} datos - { titulo, genero, sinopsis, imgPortada, precio, stock }
+ * Agrega un manga nuevo con 1 tomo
  */
 function agregarManga(datos) {
     const catalogo = obtenerCatalogoCompleto();
@@ -107,8 +105,6 @@ function generarNuevoTomo(mangaId) {
 
 /**
  * Agrega un tomo nuevo a un manga que ya existe.
- * @param {number} mangaId
- * @param {Object} datos - { precio, stock, img }
  */
 function agregarTomo(mangaId, datos) {
     const catalogo = obtenerCatalogoCompleto();
@@ -126,8 +122,7 @@ function agregarTomo(mangaId, datos) {
 }
 
 /**
- * Elimina un tomo específico de un manga (no todo el manga). Esto sí es
- * permanente: si te equivocas, vuelve a agregarlo con "Agregar tomo".
+ * Elimina un tomo específico de un manga.
  */
 function eliminarTomo(mangaId, tomo) {
     const catalogo = obtenerCatalogoCompleto();
