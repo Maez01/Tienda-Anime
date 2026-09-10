@@ -84,6 +84,7 @@ function conectarFinalizarCompra() {
             alert("Tu carrito está vacío.");
             return;
         }
+        console.log(carrito);
 
         alert("¡Gracias por tu compra! Total: " + formatearPrecio(calcularTotalCarrito()));
         guardarCarrito([]); // vacía el carrito

@@ -1,5 +1,5 @@
 // =========================================================================
-// datos-mangas.js — BASE DE DATOS SIMULADA DE MANGAS
+//  — BASE DE DATOS SIMULADA DE MANGAS
 // =========================================================================
 
 const baseDatosMangas = [
