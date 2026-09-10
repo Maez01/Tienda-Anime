@@ -72,6 +72,16 @@ function conectarBotonesCarrito() {
 function actualizarTotal() {
     const totalEl = document.getElementById("total");
     if (totalEl) totalEl.textContent = calcularTotalCarrito().toLocaleString("es-CL");
+
+}
+function descontarStockDelCarrito(carrito) {
+    carrito.forEach(item => {
+        const volumen = obtenerVolumen(item.mangaId, item.tomo);
+        if (!volumen) return; // por si acaso no se encontró (no debería pasar)
+
+        const stockRestante = Math.max(0, volumen.stock - item.cantidad);
+        cambiarStockTomo(item.mangaId, item.tomo, stockRestante);
+    });
 }
 
 function conectarFinalizarCompra() {
@@ -84,16 +94,13 @@ function conectarFinalizarCompra() {
             alert("Tu carrito está vacío.");
             return;
         }
-        console.log(carrito);
+        descontarStockDelCarrito(carrito);
 
         alert("¡Gracias por tu compra! Total: " + formatearPrecio(calcularTotalCarrito()));
         guardarCarrito([]); // vacía el carrito
         renderizarCarrito();
     });
 }
-
-
-// =========================================================================
 
 // =========================================================================
 // INICIALIZACIÓN (carrito.html)
